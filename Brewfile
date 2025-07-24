@@ -1,0 +1,5 @@
+brew "fish"
+brew "gh"
+brew "lazygit"
+brew "neovim"
+brew "ripgrep"
