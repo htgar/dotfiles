@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check if homebrew installed
 if command -v brew >/dev/null 2>&1; then
     echo ""
