@@ -9,6 +9,7 @@ ln -sf "$PWD/fish" "$XDG_CONFIG_HOME"/fish
 
 # Check if homebrew installed
 if command -v brew >/dev/null 2>&1; then
+    brew untap homebrew/core
     echo ""
 else
     echo "Homebrew is not installed. Ensure that it is installed in the container."
