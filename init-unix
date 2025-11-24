@@ -12,8 +12,9 @@ echo "Installing packages now..."
 
 brew bundle install
 
+echo "Symlinking dotfiles..."
 mkdir -p ~/.config
-ln -sf nvim ~/.config/nvim
-ln -sf fish ~/.config/fish 
+ln -sf $PWD/nvim $HOME/.config/
+ln -sf $PWD/fish $HOME/.config/ 
 
 # sudo chsh -s $(which fish)
