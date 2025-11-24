@@ -34,6 +34,14 @@ vim.opt.relativenumber = true
 vim.opt.confirm = true
 vim.opt.wrap = true
 
+-- Transparency
+vim.cmd [[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+]]
+
 -- Notifications
 require('mini.notify').setup()
 vim.notify = require('mini.notify').make_notify()
