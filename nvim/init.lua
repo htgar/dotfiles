@@ -48,21 +48,7 @@ vim.notify = require('mini.notify').make_notify()
 
 -- UI
 require('mini.statusline').setup()
-require('mini.tabline').setup()
 require('mini.icons').setup()
-local hipatterns = require('mini.hipatterns')
-hipatterns.setup({
-  highlighters = {
-
-    fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
-    hack  = { pattern = '%f[%w]()HACK()%f[%W]',  group = 'MiniHipatternsHack'  },
-    todo  = { pattern = '%f[%w]()TODO()%f[%W]',  group = 'MiniHipatternsTodo'  },
-    note  = { pattern = '%f[%w]()NOTE()%f[%W]',  group = 'MiniHipatternsNote'  },
-
-    -- TODO Replace with inbuilt lsp color swatches in nvim 0.12
-    hex_color = hipatterns.gen_highlighter.hex_color(),
-  },
-})
 
 -- Editor
 require('mini.ai').setup()
