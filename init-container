@@ -22,7 +22,6 @@ packages=(
     fish
     neovim
     ripgrep
-    lazygit
 )
 
 for package in "${packages[@]}"
