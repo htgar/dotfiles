@@ -16,6 +16,7 @@ echo "Symlinking dotfiles..."
 mkdir -p ~/.config
 ln -sf $PWD/nvim $HOME/.config/
 ln -sf $PWD/fish $HOME/.config/ 
+ln -sf $PWD/tmux $HOME/.config/ 
 ln -sf $PWD/zellij $HOME/.config/ 
 
 # sudo chsh -s $(which fish)
